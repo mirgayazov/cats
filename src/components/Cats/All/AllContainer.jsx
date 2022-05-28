@@ -3,7 +3,6 @@ import {getCats} from "../../../redux/reducers/cats-reducer";
 import {useEffect} from "react";
 import {
     getAllCatsSelector,
-    getIsFetchingSelector
 } from "../../../redux/selectors/cats-selector";
 import All from "./All";
 
@@ -27,7 +26,7 @@ const AllContainer = (props) => {
         const height = document.body.offsetHeight
         const screenHeight = window.innerHeight
         const scrolled = window.scrollY
-        const threshold = height - screenHeight / 4
+        const threshold = height - screenHeight / 10
         const position = scrolled + screenHeight
 
         if (position >= threshold) {

@@ -3,14 +3,14 @@ import Favorites from "../Cats/Favorites/Favorites";
 import AllContainer from "../Cats/All/AllContainer";
 import Preloader from "../Preloader/Preloader";
 
-const Content = (props) => {
+const Content = () => {
     return (
         <Routes>
-            <Route path="/*" element={<>
+            <Route path="/react-gh-pages/*" element={<>
                 <AllContainer/>
                 <Preloader/>
             </>}/>
-            <Route path="/favorites" element={<Favorites/>}/>
+            <Route path="/react-gh-pages/favorites" element={<Favorites/>}/>
         </Routes>
     );
 }
