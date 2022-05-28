@@ -1,6 +1,5 @@
 import Cat from "../Cat/Cat";
 import styles from "./All.module.css";
-import Preloader from "../../Preloader/Preloader";
 
 const All = (props) => {
     return (

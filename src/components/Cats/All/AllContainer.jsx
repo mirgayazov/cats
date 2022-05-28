@@ -23,13 +23,6 @@ function throttle(callee, timeout) {
 }
 
 const AllContainer = (props) => {
-    // const checkPosition = () => {
-    //     let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
-    //     if (windowRelativeBottom < document.documentElement.clientHeight + 50) {
-    //         props.getCats();
-    //     }
-    // }
-
     const checkPosition = () => {
         const height = document.body.offsetHeight
         const screenHeight = window.innerHeight
@@ -59,7 +52,6 @@ const AllContainer = (props) => {
 
 const mapStateToProps = (state) => ({
     cats: getAllCatsSelector(state),
-    isFetching: getIsFetchingSelector(state),
 })
 
 export default connect(mapStateToProps, {

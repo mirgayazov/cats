@@ -19,7 +19,6 @@ const toastOptions = {
 let initialState = {
     allCats: [],
     favoriteCats: JSON.parse(localStorage.getItem(LS_KEY)) ?? [],
-    isFetching: false,
 };
 
 const catsReducer = (state = initialState, action) => {
